@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <title>Hello World</title>
+
+
+
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+    <script src="app.js" defer></script>
+
+  </head>
+
+  <body onLoad = "init()">
+    <h1>Hello World</h1>
+    <audio src="./music/bass.wav" preload id ="bass"></audio>
+    <audio src="./music/tam1.wav" preload id ="tam1"></audio>
+    <audio src="./music/rhythm.wav" preload id ="rhythm"></audio>
+
+    <div id="time_field"></div>
+    <div id="bass_field"></div>
+    <div id="tam1_field"></div>
+
+    <button type="button" onclick="play()">play</button>
+    <button type="button" onclick="pause()" id="pause">pause</button>
+    <button type="button" onclick="bassChange()">bass</button>
+
+  </body>
+
+</html>
